@@ -15,6 +15,13 @@ Use a better box model (opinionated).
   scroll-behavior: smooth; 
 } */
 
+body {
+  background-color: linear-gradient(to bottom, #e0e0e0, #f7f7f7);
+  background-attachment: fixed;
+}
+
+
+
 * {
   font-family: "Quattrocento", sans-serif;
 }
