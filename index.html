@@ -1,246 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cyril's Portfolio</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0e0e0, #f7f7f7); /* Gray tone gradient */
+            background-attachment: fixed;
+        }
 
-    <body class="bg-gray-100 mx-0 my-0 p-0" id="background">
+        @media (min-width: 1024px) {
+            body {
+                background-image: url('assets/image/background.jpg'), linear-gradient(to bottom, #e0e0e0, #f7f7f7);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+    </style>
+</head>
 
-        <!-- style="background-image: url('assets/image/background.jpg'), url('assets/image/background.jpg'); background-size: cover; background-attachment: fixed;" -->
-        
-  <div class="pattern-cross pattern-blue-500 pattern-bg-white 
-  pattern-size-6 pattern-opacity-20">
-  
-        <section class="">
-            <div class="marquee">
+<body class="bg-gray-100 mx-0 my-0 p-0">
+    <div class="pattern-cross pattern-blue-500 pattern-bg-white pattern-size-6 pattern-opacity-20">
+        <header>
+            <div class="marquee" aria-live="polite">
                 <div>Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢 Hire me📢</div>
             </div>
-              
-
             <div class="max-w-screen-xl mx-auto px-4">
-
-                <nav class="flex flex-col items-center justify-center mb-10">
-                    <img class="md:w-72 w-40 py-5" src="assets/image/logo.svg" alt="Logo">
+                <nav class="flex flex-col items-center justify-center mb-10" aria-label="Main navigation">
+                    <img class="md:w-72 w-40 py-5" src="assets/image/logo.svg" alt="Cyril's Logo">
                     <div class="flex text-sm font-light gap-8 text-white">
-                        <span>tel: 852 61640512</span>
-                        <span>email: cyrilhhf@gmail.com</span>
+                        <span>tel: <a href="tel:+85261640512" class="underline">852 61640512</a></span>
+                        <span>email: <a href="mailto:cyrilhhf@gmail.com" class="underline">cyrilhhf@gmail.com</a></span>
                     </div>
                 </nav>
+            </div>
+        </header>
 
+        <main>
+            <section class="text-center">
                 <div class="flex flex-col justify-center items-center text-gray-900">
                     <div class="flex justify-center mt-3 mb-4">
-                        <img class="sm:h-48 h-24 rounded-full" src="assets/image/portfolio2.JPG" alt="a photo of Cyril">
+                        <img class="sm:h-48 h-24 rounded-full" src="assets/image/portfolio2.JPG" alt="A photo of Cyril">
                     </div>
                     <div class="mx-5 mt-10 flex flex-col justify-center">
-                      <h1 class="font-semibold text-white text-3xl text-center md:text-4xl leading-none mb-8 font-sans">Data Analyst <span class="font-semibold text-sm">(for now...🫡)</span></h1>
-                      <p class="bg-white bg-opacity-50 px-8 py-5 rounded-md sm:max-w-sm lg:max-w-2xl font-normal text-md md:text-xl mb-5">Creating hassle-free web experience is my new passion. Really excited to embark on this journey as a web developer!</p>  
-                  </div>
-                </div>
-            </div>
-
-
-
-        </section>
-
-        <section class="md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-2">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
-                    <div class="bg-gray-50 px-8 pb-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
-                            <i data-feather="activity"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">Front-End Skillset</h4>
-
-                        <p class="font-normal text-gray-500 text-md leading-6"> In addition to a solid understanding of HTML, CSS and Javascript, I have built a strong skill set focused 
-                            on React, TypeScript and Tailwind CSS to create responsive and visually appealing interfaces. Vite is my go to for building fast and efficient websites.
-                            Using these technologies, I have created a wide range of projects, from simple mini games to more complex web applications.
-                            <a href="#portfolio" class="font-medium cursor-pointer text-gray-500 underline">View a list of my projects 😎</a>
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 px-8 pb-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
-                            <i data-feather="codesandbox"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">My passion</h4>
-
-                        <p class="font-normal text-gray-500 text-md leading-6">
-                            For many years, I have enjoyed the benefits of well-designed websites that have made everyday tasks easier and more enjoyable. 
-                            The experience has inspired me to contribute to the web in a meaningful way, crafting applications that not only meet users' needs but also enrich their experience, 
-                            just as the websites I've used have done for me.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 px-8 pb-10 rounded-md">
-                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
-                            <i data-feather="coffee"></i>
-                        </div>
-
-                        <h4 class="font-medium text-gray-700 text-lg mb-4">Experience as a data analyst</h4>
-                        <p class="font-normal text-gray-500 text-md leading-6">
-                            Working with data has required me to be detail-oriented and analytical, while crafting data visualizations demands creativity and a keen eye for design. 
-                            These skills have translated into my web development learning journey. 
-                            I believe that one of the most important aspects of my work — whether I'm working with data or building a website — is my commitment to continuous learning. 
-                            As a programmer, I strive to adapt to the ever-changing landscape of technology and the evolving needs of users 🥸!
-                        </p>
+                        <h1 class="font-semibold text-white text-3xl text-center md:text-4xl leading-none mb-8 font-sans">Data Analyst <span class="font-semibold text-sm">(for now...🫡)</span></h1>
+                        <p class="bg-white bg-opacity-50 px-8 py-5 rounded-md sm:max-w-sm lg:max-w-2xl font-normal text-md md:text-xl mb-5">Creating hassle-free web experience is my new passion. Really excited to embark on this journey as a web developer!</p>
                     </div>
                 </div>
+            </section>
 
-            </div>
-
-        </section>
-
-        <section class="py-10 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="flex flex-col justify-between">
-                    <div class="lg:mb-0">
-                        <h1 id="portfolio" class="font-medium text-white text-3xl md:text-4xl mb-5">Portfolio</h1>
-                        <p class="font-normal text-white text-sm md:text-base mb-8">Here are some of the projects I have worked on. Click on each to view the live site.
+            <section class="md:py-16">
+                <div class="container max-w-screen-xl mx-auto px-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
+                        <div class="bg-gray-50 px-8 pb-10 rounded-md">
+                            <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
+                                <i data-feather="activity" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-700 text-lg mb-4">Front-End Skillset</h4>
+                            <p class="font-normal text-gray-500 text-md leading-6"> In addition to a solid understanding of HTML, CSS and Javascript, I have built a strong skill set focused on React, TypeScript and Tailwind CSS to create responsive and visually appealing interfaces. Vite is my go to for building fast and efficient websites. Using these technologies, I have created a wide range of projects, from simple mini games to more complex web applications. <a href="#portfolio" class="font-medium cursor-pointer text-gray-500 underline">View a list of my projects 😎</a></p>
+                        </div>
+                        <div class="bg-gray-50 px-8 pb-10 rounded-md">
+                            <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
+                                <i data-feather="codesandbox" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-700 text-lg mb-4">My passion</h4>
+                            <p class="font-normal text-gray-500 text-md leading-6"> For many years, I have enjoyed the benefits of well-designed websites that have made everyday tasks easier and more enjoyable. The experience has inspired me to contribute to the web in a meaningful way, crafting applications that not only meet users' needs but also enrich their experience, just as the websites I've used have done for me.</p>
+                        </div>
+                        <div class="bg-gray-50 px-8 pb-10 rounded-md">
+                            <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md">
+                                <i data-feather="coffee" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-700 text-lg mb-4">Experience as a data analyst</h4>
+                            <p class="font-normal text-gray-500 text-md leading-6"> Working with data has required me to be detail-oriented and analytical, while crafting data visualizations demands creativity and a keen eye for design. These skills have translated into my web development learning journey. I believe that one of the most important aspects of my work — whether I'm working with data or building a website — is my commitment to continuous learning. As a programmer, I strive to adapt to the ever-changing landscape of technology and the evolving needs of users 🥸!</p>
+                        </div>
                     </div>
-                    <div class="space-y-8">
+                </div>
+            </section>
+
+            <section class="py-10 md:py-16">
+                <div class="container max-w-screen-xl mx-auto px-4">
+                    <div class="flex flex-col justify-between">
+                        <div class="lg:mb-0">
+                            <h1 id="portfolio" class="font-medium text-white text-3xl md:text-4xl mb-5">Portfolio</h1>
+                            <p class="font-normal text-white text-sm md:text-base mb-8">Here are some of the projects I have worked on. Click on each to view the live site.</p>
+                        </div>
+                        <div class="space-y-8">
                             <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
                                 <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h1>
                                 <div>
                                     <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Van Life</h1>
-                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                        Web application for renting travel vans, built with React and React Router for client-side routing. 
-                                        <br> 
-                                        <br> 
-                                        The project emphasizes responsive design principles to ensure a seamless user experience across different devices.
-                                    </p>
+                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">Web application for renting travel vans, built with React and React Router for client-side routing. <br> <br> The project emphasizes responsive design principles to ensure a seamless user experience across different devices.</p>
                                     <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://vanlifecyril.netlify.app/">View site</a>
                                 </div>
-                                
                             </div>
-                        
-                        <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h1>
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Catch of the day</h1>
-                                <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                     A seafood market app containing a menu, an order form, and an inventory management area where users can immediately update product details.
-                                     <br> 
-                                     <br>
-                                     The app is built with React.js + Firebase.</p>
-                                <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://catchoftheday1.netlify.app/">View site</a>
+                            <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
+                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h1>
+                                <div>
+                                    <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Catch of the day</h1>
+                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">A seafood market app containing a menu, an order form, and an inventory management area where users can immediately update product details. <br> <br> The app is built with React.js + Firebase.</p>
+                                    <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://catchoftheday1.netlify.app/">View site</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h1>
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Assembly: Endgame</h1>
-                                <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                    A web-based game where the player must assemble a word puzzle within limit of rounds. 
-                                </p>
-                                <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://assemblyendgamecyril.netlify.app/">View site</a>
+                            <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
+                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h1>
+                                <div>
+                                    <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Assembly: Endgame</h1>
+                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">A web-based game where the player must assemble a word puzzle within limit of rounds.</p>
+                                    <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://assemblyendgamecyril.netlify.app/">View site</a>
+                                </div>
                             </div>
                         </div>
-                        
-                        
+                        <div id="more-projects" class="hidden space-y-8 mt-8">
+                            <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
+                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">04</h1>
+                                <div>
+                                    <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Chef Claude</h1>
+                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">User can easily obtain a recipe with any ingredients they wish with the help of Claude AI.</p>
+                                    <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://chefclaudecyril.netlify.app/">View site</a>
+                                </div>
+                            </div>
+                            <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
+                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">05</h1>
+                                <div>
+                                    <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Tenzies</h1>
+                                    <p class="font-normal text-gray-500 text-sm md:text-base mb-5">A mini game. The player rolls the dice and tries to get as many of the same number as possible.</p>
+                                    <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://tenziescyril.netlify.app/">View site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="more-button" class="mt-8 px-4 py-2 bg-gray-700 text-white rounded-md" aria-expanded="false" aria-controls="more-projects">More</button>
                     </div>
-                    <div id="more-projects" class="hidden space-y-8 mt-8">
-                        <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
-                            
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">04</h1>
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Chef Claude</h1>
-                                <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                    User can easily obtain a recipe with any ingredients they wish with the help of Claude AI.
-                                    <br>
-                                </p>
-                                <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://chefclaudecyril.netlify.app/">View site</a>
-                            </div>
-                        </div>
-                        
-                        <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">05</h1>
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Tenzies</h1>
-                                <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                    A mini game. The player rolls the dice and tries to get as many of the same number as possible.
-                                </p>
-                                <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="https://tenziescyril.netlify.app/">View site</a>
-                            </div>
-                        </div>
-                        <!-- <div class="flex space-x-6 bg-white bg-opacity-80 px-8 py-10 rounded-md">
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">06</h1>
-                            <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Project 6</h1>
-                                <p class="font-normal text-gray-500 text-sm md:text-base mb-5">
-                                    Description of Project 6.
-                                </p>
-                                <a class="transition ease-in-out duration-500 underline text-gray-700" target="_blank" rel="noopener noreferrer" href="#">View site</a>
-                            </div>
-                        </div> -->
-                    </div>
-                    <button id="more-button" class="mt-8 px-4 py-2 bg-gray-700 text-white rounded-md">More</button>
                 </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- <hr class="border-t-3 border-gray-300 my-8"> -->
-
+            </section>
+        </main>
 
         <footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
-
             <div class="container max-w-screen-xl mx-auto px-4">
-
                 <div class="flex flex-col lg:flex-row justify-center">
                     <div class="flex items-center justify-center space-x-8">
-    
-                        <!-- <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-500 hover:bg-opacity-40 hover:text-gray-300 bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="facebook" class="text-gray-700 transition ease-in-out duration-500"></i>
-                        </a> -->
-    
-                        <a href="https://github.com/cyril-hhf" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-500 hover:bg-opacity-40 hover:text-gray-300 bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="github" class="text-gray-700 transition ease-in-out duration-500"></i>
+                        <a href="https://github.com/cyril-hhf" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-500 hover:bg-opacity-40 hover:text-gray-300 bg-gray-200 transition ease-in-out duration-500" aria-label="GitHub">
+                            <i data-feather="github" class="text-gray-700 transition ease-in-out duration-500" aria-hidden="true"></i>
                         </a>
-    
-                        <!-- <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-500 hover:bg-opacity-40 hover:text-gray-300 bg-gray-200 transition ease-in-out duration-500">
-                            <i data-feather="instagram" class="text-gray-700 transition ease-in-out duration-500"></i>
-                        </a> -->
                     </div>
                 </div>
-
             </div>
-
         </footer>
     </div>
 
-
-        <script>
-            feather.replace();
-            document.getElementById('more-button').addEventListener('click', function() {
+    <script>
+        feather.replace();
+        document.getElementById('more-button').addEventListener('click', function() {
             var moreProjects = document.getElementById('more-projects');
             if (moreProjects.classList.contains('hidden')) {
                 moreProjects.classList.remove('hidden');
                 this.textContent = 'Less';
+                this.setAttribute('aria-expanded', 'true');
             } else {
                 moreProjects.classList.add('hidden');
                 this.textContent = 'More';
+                this.setAttribute('aria-expanded', 'false');
             }
         });
-        </script>
+    </script>
+</body>
 
-    </body>
 </html>
